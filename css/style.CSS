@@ -1,4 +1,35 @@
-/* File CSS principale */
-body {
-  background-color: #f0f0f0;
-}
+/*
+  Che cos'è il CSS?
+
+  CSS sta per "Cascading Style Sheets" (Fogli di stile a cascata).
+  È il linguaggio usato per definire lo stile di una pagina web HTML:
+  colori, spaziature, font, layout, animazioni, ecc.
+
+  Ogni "regola" CSS è formata da un selettore (es. un tag, una classe o un ID)
+  seguito da una coppia di parentesi graffe che contengono le proprietà da applicare.
+
+  Esempio base:
+  ----------------------------------------
+  p {
+    color: red;
+    font-size: 16px;
+  }
+  Questo cambia il colore di tutti i paragrafi in rosso e la dimensione del font a 16px.
+  ----------------------------------------
+
+  Le CLASSI si scrivono con un punto (.)
+  Esempio:
+  .evidenziato {
+    background-color: yellow;
+  }
+
+  Gli ID si scrivono con un cancelletto (#)
+  Esempio:
+  #titolo-principale {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  ⚠ Attenzione: gli ID devono essere unici nella pagina.
+     Le classi invece possono essere riutilizzate su più elementi.
+*/
