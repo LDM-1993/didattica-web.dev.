@@ -1,0 +1,101 @@
+Regole di base del PHP
+
+1. Il codice PHP va sempre aperto e chiuso con questi tag:
+
+
+
+<?php
+// codice PHP qui dentro
+?>
+
+2. Ogni istruzione termina con il punto e virgola ;.
+
+
+
+echo "Ciao!";  // stampa a schermo
+
+3. Commenti:
+
+
+
+Commento su una riga:
+
+
+// Questo è un commento
+
+Commento su più righe:
+
+
+/*
+  Questo è un commento
+  su più righe
+*/
+
+4. Variabili:
+
+
+
+In PHP tutte le variabili iniziano con il simbolo $.
+
+
+$nome = "Leonardo";
+$eta = 32;
+
+5. Tipi di dati comuni:
+
+
+
+Stringhe (testo): "ciao", 'mondo'
+
+Numeri interi: 10
+
+Numeri decimali: 3.14
+
+Booleani: true o false
+
+
+6. Stampa a schermo:
+
+
+
+echo "Ciao Leonardo!";
+
+7. Condizioni:
+
+
+
+if ($eta > 18) {
+    echo "Sei maggiorenne";
+} else {
+    echo "Sei minorenne";
+}
+
+8. Funzioni:
+
+
+
+function saluta($nome) {
+    return "Ciao " . $nome;
+}
+
+echo saluta("Leonardo");
+
+9. Concatenazione (unire stringhe):
+
+
+
+$saluto = "Ciao " . $nome;
+
+10. Operatori base:
+
+
+
+Addizione: +
+
+Sottrazione: -
+
+Moltiplicazione: *
+
+Divisione: /
+
+Uguale: == (confronto), = (assegnazione)
