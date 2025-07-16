@@ -1,0 +1,10 @@
+Cos'è Bootstrap e a cosa serve
+
+Bootstrap è una libreria open source sviluppata da Twitter che serve per creare siti web in modo più veloce ed efficiente.
+Include una raccolta di classi CSS e componenti già pronti, come griglie, bottoni, navbar, tabelle, modali e molto altro.
+
+Il suo scopo principale è semplificare la costruzione del layout di una pagina e rendere il sito responsive, cioè capace di adattarsi a schermi di diverse dimensioni (desktop, tablet, smartphone...).
+
+In pratica, Bootstrap ti permette di non scrivere tutto da zero, ma di usare delle strutture già pronte e collaudate, risparmiando tempo e ottenendo un risultato pulito e professionale.
+
+È molto usato nel mondo del lavoro perché accelera lo sviluppo, garantisce una buona compatibilità tra i browser e rende il codice più ordinato.
