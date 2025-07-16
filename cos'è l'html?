@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Descrizione di HTML</title>
+</head>
+<body>
+  <h1>Che cos’è l’HTML?</h1>
+  <p>
+    L’HTML è il linguaggio fondamentale per costruire le pagine web.  
+    Serve a organizzare e presentare contenuti su Internet, come testi, immagini, link e molto altro.  
+    Senza HTML, non sarebbe possibile vedere e navigare nei siti web.  
+    È la base su cui si costruiscono tutte le pagine che usiamo ogni giorno.
+  </p>
+</body>
+</html>
