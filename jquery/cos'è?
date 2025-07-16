@@ -1,0 +1,29 @@
+Cos’è jQuery, quando e perché si usa
+
+jQuery è una libreria JavaScript leggera e facile da usare, creata per semplificare la scrittura di codice JavaScript nei siti web.
+Permette di manipolare il contenuto delle pagine, gestire eventi (come click e movimenti del mouse), fare animazioni e interagire con il server tramite richieste AJAX, tutto con meno righe di codice rispetto al JavaScript “puro”.
+
+
+---
+
+Quando si usa:
+
+Quando vuoi velocizzare lo sviluppo front-end senza scrivere JavaScript complesso.
+
+Per lavorare con più browser senza preoccuparti delle differenze (jQuery gestisce le compatibilità).
+
+Per aggiungere facilmente effetti visivi, animazioni e interazioni dinamiche.
+
+Quando devi fare chiamate AJAX in modo semplice e veloce.
+
+
+
+---
+
+Perché usarlo ancora oggi:
+
+Anche se JavaScript moderno ha migliorato molto, jQuery resta popolare per la sua semplicità e per la grande quantità di plugin disponibili.
+
+Molti progetti legacy lo usano ancora, quindi è utile conoscerlo.
+
+Ottimo per chi inizia a programmare in JavaScript perché riduce la complessità.
