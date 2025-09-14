@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <link rel="stylesheet"
+    href="style.css">
+
     <!-- CSS personalizzato -->
     <style>
       /* Qui andrà lo stile personalizzato */
@@ -46,7 +49,7 @@
 
 section.py-5.text-center {
   position: relative;
-  height: 90vh; /* 90% dell'altezza viewport, quasi tutto lo schermo */
+  height: 90vh; 
   background-image: url('https://media.istockphoto.com/id/137159819/it/foto/tornio-cnc-elaborazione.jpg?s=1024x1024&w=is&k=20&c=ympS3fOj0vIb9rMyHsro00ZePNx546HTJvnmN5Xbwgw=');
   background-size: cover;
   background-position: center;
@@ -54,12 +57,22 @@ section.py-5.text-center {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra verticalmente il contenuto */
+  justify-content: center; 
   text-align: center;
   padding: 0 20px;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   z-index: 1;
+
+  /* Curvatura solo in basso */
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% 90%, 
+    50% 100%, 
+    0 90%
+  );
 }
+
 
 section.py-5.text-center::before {
   content: "";
@@ -80,6 +93,13 @@ section.py-5.text-center::before {
   height: 400px;
   object-fit: cover;
 }
+.text-section {
+    padding: 3rem 1rem;
+  }
+
+  .title-color {
+    color: #e48900; /* colore personalizzato per il titolo */
+  }
     </style>
   </head>
 
@@ -132,18 +152,23 @@ section.py-5.text-center::before {
     <!-- HERO -->
     <section class="py-5 text-center">
       <div class="container">
-        <h1 class="display-4">Diventa Programmatore CNC</h1>
-        <p class="lead">Un corso completo per passare da operatore a tecnico specializzato in programmazione.</p>
+        <h1 class="display-4"><strong>Diventa Programmatore CNC</strong></h1>
+        <p class="lead"><strong>corso completo per passare da operatore a tecnico specializzato in programmazione su macchine utensili a controllo numerico.</strong></p>
         <a href="#" class="btn btn-primary">Iscriviti ora</a>
       </div>
     </section>
-
-
+<section class="py-5 text-section">
+  <div class="text-center">
+    <h2 class="title-color mb-3">Corso CNC online di 64 ore (teoria + simulazione)</h2>
+    <p class="lead"><strong>Grazie al nostro simulatore alla fine del corso saprai programmare qualsiasi Tornio o Fresa CNC che utilizza il linguaggio Fanuc. Vedremo inoltre le differenze con il linguaggio Iso e Siemens. Sarai in grado di creare programmi a partire da zero, senza bisogno di riadattare programmi già esistenti.</strong></p>
+  </div>
+</section>
+<!--carosello-->
  <div class="container my-5" style="max-width: 700px;">
   <div id="caroselloTornio" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://media.istockphoto.com/id/1284935905/it/foto/il-filo-della-macchina-di-lamina-cnc-che-taglia-la-parte-dellalbero-metallico.jpg?s=1024x1024&w=is&k=20&c=5SywDTS0DsLOgGj_RaQzRocxNmVVB-A8Iw0UrljS0d0=" class="d-block w-100" alt="Tornio CNC">
+        <img src="https://media.istockphoto.com/id/1736996308/it/foto/scena-astratta-la-fresatrice-cnc-che-taglia-grossolanamente-lalloggiamento-in-alluminio-e-lo.jpg?s=1024x1024&w=is&k=20&c=Vbd-4etBq2iKLR7YcKdEOaE7UgN27_rzOPUkzu22SwE=" class="d-block w-100" alt="Tornio CNC">
       </div>
       <div class="carousel-item">
         <img src="https://media.istockphoto.com/id/1190892828/it/foto/lavorazione-cnc-industria-manifatturiera.jpg?s=1024x1024&w=is&k=20&c=brbsin0BTpk684SbiyH2dWpgzsgI5H4mU33sDN82-s0=" class="d-block w-100" alt="Tornio tradizionale">
@@ -151,20 +176,20 @@ section.py-5.text-center::before {
       <div class="carousel-item">
         <img src="https://media.istockphoto.com/id/587949568/it/foto/attrezzo-tagliente-al-lavoro-in-metallo.jpg?s=1024x1024&w=is&k=20&c=QnvgOfd1LWzAc10Vlnpj81AKay_ltqUrGDkWYp2V1a4=" class="d-block w-100" alt="Macchinari industriali">
       </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/587949568/it/foto/attrezzo-tagliente-al-lavoro-in-metallo.jpg?s=1024x1024&w=is&k=20&c=QnvgOfd1LWzAc10Vlnpj81AKay_ltqUrGDkWYp2V1a4=" class="d-block w-100" alt="Macchinari industriali">
+      </div>
     </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#caroselloTornio" data-bs-slide="prev">
+<button class="carousel-control-prev" type="button" data-bs-target="#caroselloTornio" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Precedente</span>
     </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#caroselloTornio" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#caroselloTornio" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Successivo</span>
     </button>
   </div>
 </div>
-
 <!-- SEZIONE COSA IMPARERAI -->
     <section id="cosa-imparerai" class="py-5 bg-light">
       <div class="container text-center">
@@ -188,8 +213,7 @@ section.py-5.text-center::before {
         </div>
       </div>
     </section>
-
-    <!-- SEZIONE RECENSIONI -->
+<!-- SEZIONE RECENSIONI -->
     <section id="recensioni" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">Cosa dicono gli studenti</h2>
@@ -224,8 +248,40 @@ section.py-5.text-center::before {
         </div>
       </div>
     </section>
+    <!--form contatto-->
+<section id="contatti" class="py-5 bg-light">
+  <div class="container" style="max-width: 600px;">
+    <h2 class="text-center mb-4">Richiedi informazioni</h2>
+    <p class="text-center mb-4">Compila il modulo e verrai ricontattato al più presto dal nostro team.</p>
+    
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome e Cognome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Mario Rossi" required>
+      </div>
 
-    <!-- SEZIONE CHI SIAMO -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="mario@email.com" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Telefono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="045 1234567" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="messaggio" class="form-label">Messaggio</label>
+        <textarea class="form-control" id="messaggio" rows="4" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Invia</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- SEZIONE CHI SIAMO -->
    <section id="chi-siamo" class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="mb-4">Chi Siamo</h2>
@@ -242,5 +298,40 @@ section.py-5.text-center::before {
 </section>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="bg-dark text-light py-3">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <!-- Logo + brand -->
+    <div class="mb-2 mb-md-0 d-flex align-items-center">
+      <i class="bi bi-cpu fs-4 me-2"></i>
+      <span class="fw-bold">CNC Master</span>
+    </div>
+
+    <!-- Social -->
+    <div class="mb-2 mb-md-0">
+      <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
+      <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-5"></i></a>
+      <a href="#" class="text-light"><i class="bi bi-linkedin fs-5"></i></a>
+    </div>
+
+    <!-- Contatti -->
+    <div class="text-center text-md-start small mb-2 mb-md-0">
+      <a href="mailto:cncmaster@gmail.com" class="text-light text-decoration-none d-block d-md-inline me-md-3">
+        <i class="bi bi-envelope"></i> cncmaster@gmail.com
+      </a>
+        <i class="bi bi-telephone"></i> 045 2585988
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-md-end small">
+      © 2025 CNC Master – Tutti i diritti riservati
+    </div>
+
+  </div>
+</footer>
+
+
+
   </body>
 </html>
